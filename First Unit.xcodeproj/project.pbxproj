@@ -86,6 +86,12 @@
 		FAF22D221E7B07A9004510F3 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D211E7B07A9004510F3 /* Usuario.swift */; };
 		FAF22D241E7B10AC004510F3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D231E7B10AC004510F3 /* Page.swift */; };
 		FAF22D261E7B1713004510F3 /* GrupoMaestro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D251E7B1713004510F3 /* GrupoMaestro.swift */; };
+		FAF22D281E7B289E004510F3 /* Crucigrama.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D271E7B289E004510F3 /* Crucigrama.swift */; };
+		FAF22D2A1E7B28AB004510F3 /* SopaLetras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D291E7B28AB004510F3 /* SopaLetras.swift */; };
+		FAF22D2C1E7B28BC004510F3 /* Dibujar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D2B1E7B28BC004510F3 /* Dibujar.swift */; };
+		FAF22D2E1E7B28CB004510F3 /* Enlazar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D2D1E7B28CB004510F3 /* Enlazar.swift */; };
+		FAF22D301E7B28D7004510F3 /* Completar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D2F1E7B28D7004510F3 /* Completar.swift */; };
+		FAF22D321E7B28F2004510F3 /* Escribir.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D311E7B28F2004510F3 /* Escribir.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,6 +178,12 @@
 		FAF22D211E7B07A9004510F3 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		FAF22D231E7B10AC004510F3 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		FAF22D251E7B1713004510F3 /* GrupoMaestro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoMaestro.swift; sourceTree = "<group>"; };
+		FAF22D271E7B289E004510F3 /* Crucigrama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crucigrama.swift; sourceTree = "<group>"; };
+		FAF22D291E7B28AB004510F3 /* SopaLetras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SopaLetras.swift; sourceTree = "<group>"; };
+		FAF22D2B1E7B28BC004510F3 /* Dibujar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dibujar.swift; sourceTree = "<group>"; };
+		FAF22D2D1E7B28CB004510F3 /* Enlazar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enlazar.swift; sourceTree = "<group>"; };
+		FAF22D2F1E7B28D7004510F3 /* Completar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completar.swift; sourceTree = "<group>"; };
+		FAF22D311E7B28F2004510F3 /* Escribir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Escribir.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -567,8 +579,8 @@
 		FAF22D061E7AFCAC004510F3 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				FAF22D071E7AFD4D004510F3 /* Persona.swift */,
-				FAF22D091E7AFD58004510F3 /* Estudiante.swift */,
+				FAF22D341E7B2931004510F3 /* Dinamicas */,
+				FAF22D331E7B291B004510F3 /* Usuarios */,
 				FAF22D0D1E7AFD78004510F3 /* Unit.swift */,
 				FAF22D0F1E7AFD83004510F3 /* Materia.swift */,
 				FAF22D111E7AFD93004510F3 /* Lesson.swift */,
@@ -577,12 +589,34 @@
 				FAF22D191E7AFDCE004510F3 /* Grupo.swift */,
 				FAF22D1B1E7AFDDA004510F3 /* Grado.swift */,
 				FAF22D1D1E7AFDE3004510F3 /* Nivel.swift */,
-				FAF22D1F1E7AFDF0004510F3 /* Maestro.swift */,
-				FAF22D211E7B07A9004510F3 /* Usuario.swift */,
 				FAF22D231E7B10AC004510F3 /* Page.swift */,
 				FAF22D251E7B1713004510F3 /* GrupoMaestro.swift */,
 			);
 			name = DTO;
+			sourceTree = "<group>";
+		};
+		FAF22D331E7B291B004510F3 /* Usuarios */ = {
+			isa = PBXGroup;
+			children = (
+				FAF22D071E7AFD4D004510F3 /* Persona.swift */,
+				FAF22D091E7AFD58004510F3 /* Estudiante.swift */,
+				FAF22D1F1E7AFDF0004510F3 /* Maestro.swift */,
+				FAF22D211E7B07A9004510F3 /* Usuario.swift */,
+			);
+			name = Usuarios;
+			sourceTree = "<group>";
+		};
+		FAF22D341E7B2931004510F3 /* Dinamicas */ = {
+			isa = PBXGroup;
+			children = (
+				FAF22D271E7B289E004510F3 /* Crucigrama.swift */,
+				FAF22D291E7B28AB004510F3 /* SopaLetras.swift */,
+				FAF22D2B1E7B28BC004510F3 /* Dibujar.swift */,
+				FAF22D2D1E7B28CB004510F3 /* Enlazar.swift */,
+				FAF22D2F1E7B28D7004510F3 /* Completar.swift */,
+				FAF22D311E7B28F2004510F3 /* Escribir.swift */,
+			);
+			name = Dinamicas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -752,22 +786,28 @@
 				849797E51E709AFF0048CA27 /* Gif2ViewController.swift in Sources */,
 				84B0CA4D1E537FD20011E552 /* AnimatedAppearViewController.swift in Sources */,
 				FAF22D0E1E7AFD78004510F3 /* Unit.swift in Sources */,
+				FAF22D281E7B289E004510F3 /* Crucigrama.swift in Sources */,
 				FAF22D1E1E7AFDE3004510F3 /* Nivel.swift in Sources */,
 				849B24B71E706E8F001F2980 /* GiftViewController.swift in Sources */,
 				FAF22D081E7AFD4D004510F3 /* Persona.swift in Sources */,
+				FAF22D301E7B28D7004510F3 /* Completar.swift in Sources */,
+				FAF22D2A1E7B28AB004510F3 /* SopaLetras.swift in Sources */,
 				84F0DC911E58235D00B8D2F8 /* animated1.swift in Sources */,
 				FAF22D241E7B10AC004510F3 /* Page.swift in Sources */,
 				84A6CB261E458C240084C8E5 /* ViewController.swift in Sources */,
 				FAF22D0A1E7AFD58004510F3 /* Estudiante.swift in Sources */,
 				8485F0AF1E54D04A00C457DF /* MultipleSoundsViewController.swift in Sources */,
+				FAF22D321E7B28F2004510F3 /* Escribir.swift in Sources */,
 				84A6CB241E458C240084C8E5 /* AppDelegate.swift in Sources */,
 				84D73B081E55FAB900896D40 /* AppearViewController.swift in Sources */,
 				84F0A1F11E5F4EE70030AC0A /* Animated2ButtonViewController.swift in Sources */,
 				FAF22D1C1E7AFDDA004510F3 /* Grado.swift in Sources */,
 				844D2BA21E68AB5700C7BD52 /* Animated4ButtonViewController.swift in Sources */,
 				84AE55951E65C0800093AC51 /* heroesViewController.swift in Sources */,
+				FAF22D2C1E7B28BC004510F3 /* Dibujar.swift in Sources */,
 				FAF22D141E7AFDA1004510F3 /* Assestment.swift in Sources */,
 				FAF22D101E7AFD83004510F3 /* Materia.swift in Sources */,
+				FAF22D2E1E7B28CB004510F3 /* Enlazar.swift in Sources */,
 				FAF22D221E7B07A9004510F3 /* Usuario.swift in Sources */,
 				8469F2051E646F8A0005D4B6 /* Draw2ViewController.swift in Sources */,
 				849B24B51E706E60001F2980 /* Git+Swift.swift in Sources */,
