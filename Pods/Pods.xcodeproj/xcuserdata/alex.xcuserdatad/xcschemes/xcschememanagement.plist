@@ -8,32 +8,56 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>ImageSlideshow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>Pods-First Unit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>637BA102AE0DEC373D93AD91A88A3F28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>854A358F694791FC141F75E15F82BB64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C864676B228AA47B398747CEE235D6F8</key>
+		<key>8AD9C6CA3913751FCE9B8B78CC5EF157</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5B21DDEF30ECFC172FAADB0EFD66DBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E00DB57B20B031EB2B16A37707924F22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
