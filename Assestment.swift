@@ -17,13 +17,13 @@ func ==(lhs: Assesment, rhs: Assesment) -> Bool {
 
 class Assesment: Object {
     
-    dynamic var idAssesment: String = ""
+    dynamic var idAssesment: Int = 0
     dynamic var nombreAssesment: String = ""
-    dynamic var paginas: Array<Page>!
+    var paginas: List<Page>!
     
     convenience required init(_ json: JSON) {
         self.init()
-        self.idAssesment = json["idAssesment"].stringValue
+        self.idAssesment = json["idAssesment"].intValue
         self.nombreAssesment = json["nombreAssesment"].stringValue
         let paginasAssestment = json ["paginas"]
         
@@ -31,6 +31,24 @@ class Assesment: Object {
             let currentPagina = Page(subJson)
             self.paginas.append(currentPagina)
         }
+    }
+    
+    
+    convenience required init(idAssesment: Int, nombreAssesment: String, paginas: List<Page>?) {
+        self.init()
+        self.idAssesment = idAssesment
+        self.nombreAssesment = nombreAssesment
+        
+        for i in 0 ... (paginas?.count)! - 1{
+            self.paginas.append((paginas?[i])!)
+        }
+    }
+    
+    convenience required init(_ idAssesment: Int) {
+        self.init()
+        self.idAssesment = 0
+        self.nombreAssesment = ""
+        self.paginas = List<Page>()
     }
     
 }

@@ -58,6 +58,24 @@ class Persona: Object {
         
     }
     
+    convenience required init(idPersona: Int, nombrePersona: String, apellido: String) {
+        self.init()
+        self.idPersona = idPersona
+        self.nombrePersona = nombrePersona
+        self.apellido = apellido
+        self.email = ""
+        self.foto = ""
+    }
+    
+    convenience required init(_ idPersona: Int) {
+        self.init()
+        self.idPersona = 0
+        self.nombrePersona = ""
+        self.apellido = ""
+        self.email = ""
+        self.foto = ""
+    }
+
     func getFullName() -> String {
         return "\(nombrePersona) \(apellido)"
     }

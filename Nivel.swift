@@ -17,13 +17,13 @@ func ==(lhs: Nivel, rhs: Nivel) -> Bool {
 
 class Nivel: Object{
     
-    dynamic var idNivel: String = ""
+    dynamic var idNivel: Int = 0
     dynamic var nombreNivel: String = ""
-    dynamic var grados: Array<Grado>!
+    var grados: List<Grado>!
     
     convenience required init(_ json: JSON) {
         self.init()
-        self.idNivel = json["idNivel"].stringValue
+        self.idNivel = json["idNivel"].intValue
         self.nombreNivel = json["nombreNivel"].stringValue
         let gradosNivel = json ["grados"]
         
@@ -32,6 +32,23 @@ class Nivel: Object{
             self.grados.append(currentGrado)
         }
 
+    }
+    
+    convenience required init(idNivel: Int, nombreNivel: String, grados: List<Grado>?) {
+        self.init()
+        self.idNivel = idNivel
+        self.nombreNivel = nombreNivel
+        
+        for i in 0 ... (grados?.count)! - 1{
+            self.grados.append((grados?[i])!)
+        }
+    }
+    
+    convenience required init(_ idNivel: Int) {
+        self.init()
+        self.idNivel = 0
+        self.nombreNivel = ""
+        self.grados = List<Grado>()
     }
     
 }

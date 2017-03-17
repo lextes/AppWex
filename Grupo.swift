@@ -17,13 +17,13 @@ func ==(lhs: Grupo, rhs: Grupo) -> Bool {
 
 class Grupo: Object{
     
-    dynamic var idGrupo: String = ""
+    dynamic var idGrupo: Int = 0
     dynamic var nombreGrupo: String = ""
-    dynamic var estudiantes: Array<Estudiante>!
+    var estudiantes: List<Estudiante>!
     
     convenience required init(_ json: JSON) {
         self.init()
-        self.idGrupo = json["idGrupo"].stringValue
+        self.idGrupo = json["idGrupo"].intValue
         self.nombreGrupo = json["nombreGrupo"].stringValue
         let estudiantesGrupo = json ["estudiantes"]
         
@@ -32,6 +32,23 @@ class Grupo: Object{
             self.estudiantes.append(currentEstudiante)
         }
 
+    }
+    
+    convenience required init(idGrupo: Int, nombreGrupo: String, estudiantes: List<Estudiante>?) {
+        self.init()
+        self.idGrupo = idGrupo
+        self.nombreGrupo = nombreGrupo
+        
+        for i in 0 ... (estudiantes?.count)! - 1{
+            self.estudiantes.append((estudiantes?[i])!)
+        }
+    }
+    
+    convenience required init(_ idGrupo: Int) {
+        self.init()
+        self.idGrupo = 0
+        self.nombreGrupo = ""
+        self.estudiantes = List<Estudiante>()
     }
     
 }

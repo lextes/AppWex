@@ -23,9 +23,13 @@ class Usuario: Object {
     convenience required init(_ json: JSON) {
         self.init()
         token = json["token"].stringValue
-        
         persona = Persona(json)
     }
     
+    convenience required init(_ token: String) {
+        self.init()
+        self.token = ""
+        self.persona = Persona()
+    }
 }
 

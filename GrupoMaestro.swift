@@ -17,14 +17,14 @@ func ==(lhs: GrupoMaestro, rhs: GrupoMaestro) -> Bool {
 
 class GrupoMaestro: Object {
     
-    dynamic var idMaestro: String = ""
-    dynamic var idGrupo: String = ""
+    dynamic var idMaestro: Int = 0
+    dynamic var idGrupo: Int = 0
     
     
     convenience required init(_ json: JSON) {
         self.init()
-        self.idMaestro = json["idMaestro"].stringValue
-        self.idGrupo = json["idGrupo"].stringValue
+        self.idMaestro = json["idMaestro"].intValue
+        self.idGrupo = json["idGrupo"].intValue
     }
     
 }
