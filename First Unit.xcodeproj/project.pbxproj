@@ -75,6 +75,7 @@
 		FA46481E1E7C471700AB33D8 /* ManageStoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46481D1E7C471700AB33D8 /* ManageStoryBoards.swift */; };
 		FA4648201E7C488000AB33D8 /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA46481F1E7C488000AB33D8 /* Inicio.storyboard */; };
 		FA4648221E7C4CAA00AB33D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4648211E7C4CAA00AB33D8 /* LoginViewController.swift */; };
+		FA921E1B1E7C8DB20091A975 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA921E1A1E7C8DB20091A975 /* .gitignore */; };
 		FAF22D081E7AFD4D004510F3 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D071E7AFD4D004510F3 /* Persona.swift */; };
 		FAF22D0A1E7AFD58004510F3 /* Estudiante.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D091E7AFD58004510F3 /* Estudiante.swift */; };
 		FAF22D0E1E7AFD78004510F3 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF22D0D1E7AFD78004510F3 /* Unit.swift */; };
@@ -170,6 +171,7 @@
 		FA46481D1E7C471700AB33D8 /* ManageStoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageStoryBoards.swift; sourceTree = "<group>"; };
 		FA46481F1E7C488000AB33D8 /* Inicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
 		FA4648211E7C4CAA00AB33D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA921E1A1E7C8DB20091A975 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FAF22D071E7AFD4D004510F3 /* Persona.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		FAF22D091E7AFD58004510F3 /* Estudiante.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estudiante.swift; sourceTree = "<group>"; };
 		FAF22D0D1E7AFD78004510F3 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		84A6CB171E458C240084C8E5 = {
 			isa = PBXGroup;
 			children = (
+				FA921E1A1E7C8DB20091A975 /* .gitignore */,
 				FA46481F1E7C488000AB33D8 /* Inicio.storyboard */,
 				FAF22D061E7AFCAC004510F3 /* DTO */,
 				FA2B8DE01E7AEDE70030CA2C /* ViewControllers */,
@@ -728,6 +731,7 @@
 				844D2B8B1E6863DE00C7BD52 /* fernandoMontes.m4a in Resources */,
 				8423F0D31E5BFBAF00F12335 /* animated3.html in Resources */,
 				848F897D1E784976006AE839 /* nails.gif in Resources */,
+				FA921E1B1E7C8DB20091A975 /* .gitignore in Resources */,
 				8423F0D41E5BFBAF00F12335 /* animated3.hyperesources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
