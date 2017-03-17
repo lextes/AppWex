@@ -8,6 +8,8 @@ target ‘First Unit’ do
   # Pods for dreamit
 
   pod 'ImageSlideshow'
+  pod 'RealmSwift'
+  pod 'SwiftyJSON'
 
   # ignore all warnings from all pods
   inhibit_all_warnings!
