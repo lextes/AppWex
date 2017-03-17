@@ -15,7 +15,7 @@ func ==(lhs: Unit, rhs: Unit) -> Bool {
     return lhs.idUnit == rhs.idUnit
 }
 
-class Unit: Object, Equatable {
+class Unit: Object {
     
     dynamic var idUnit: String = ""
     dynamic var nombreUnit: String!

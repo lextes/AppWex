@@ -14,19 +14,19 @@ func ==(lhs: Dinamica, rhs: Dinamica) -> Bool {
     return lhs.idDinamica == rhs.idDinamica
 }
 
-class Dinamica: Object, Equatable {
+class Dinamica: Object{
     
     dynamic var idDinamica: String = ""
     dynamic var nombreDinamica: String!
-    dynamic var porciento: Float!
-    dynamic var calificacion: Float!
+    dynamic var porciento: Int = 0
+    dynamic var calificacion: Int = 0
 
     convenience required init(_ json: JSON) {
         self.init()
         self.idDinamica = json["idDinamica"].stringValue
         self.nombreDinamica = json["nombreDinamica"].stringValue
-        self.porciento = json["porciento"].stringValue
-        self.calificacion = json["calificacion"].stringValue
+        self.porciento = json["porciento"].intValue
+        self.calificacion = json["calificacion"].intValue
     }
     
 }

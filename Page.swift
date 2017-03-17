@@ -15,10 +15,10 @@ func ==(lhs: Page, rhs: Page) -> Bool {
     return lhs.idPage == rhs.idPage
 }
 
-class Page: Object, Equatable {
+class Page: Object{
     
     dynamic var idPage: String = ""
-    dynamic var numeroPage: Int!
+    dynamic var numeroPage: Int = 0
     dynamic var dinamicas: Array<Dinamica>!
     
     convenience required init(_ json: JSON) {

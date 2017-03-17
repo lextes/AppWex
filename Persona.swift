@@ -23,10 +23,10 @@ func ==(lhs: Persona, rhs: Persona) -> Bool {
     return lhs.idPersona == rhs.idPersona
 }
 
-class Persona: Object, Equatable {
+class Persona: Object {
     
-    fileprivate var dateFormatter = DateFormatter(safeLocale: true)
-    fileprivate var dateFormatterInverso = DateFormatter()
+//    fileprivate var dateFormatter = DateFormatter(coder: true)
+//    fileprivate var dateFormatterInverso = DateFormatter()
     
     dynamic var idPersona: Int = 0
     dynamic var foto: String?
@@ -39,13 +39,13 @@ class Persona: Object, Equatable {
     convenience required init(_ json: JSON) {
         self.init()
         
-        pk = json["idPersona"].intValue
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateFormatterInverso.dateFormat = "dd/MMM"
+        self.idPersona = json["idPersona"].intValue
+//        dateFormatter.dateFormat = "yyyy-MM-dd"
+//        dateFormatterInverso.dateFormat = "dd/MMM"
         
         let nombreStr = json["nombrePersona"].string
         if let tmp = nombreStr {
-            self.nombre = tmp
+            self.nombrePersona = tmp
         }
         
         let apellidoStr = json["apellido"].string

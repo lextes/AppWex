@@ -15,11 +15,11 @@ func ==(lhs: Grupo, rhs: Grupo) -> Bool {
     return lhs.idGrupo == rhs.idGrupo
 }
 
-class Grupo: Object, Equatable {
+class Grupo: Object{
     
     dynamic var idGrupo: String = ""
     dynamic var nombreGrupo: String = ""
-    dynamic var estudiantes: Array<Estudiante>
+    dynamic var estudiantes: Array<Estudiante>!
     
     convenience required init(_ json: JSON) {
         self.init()

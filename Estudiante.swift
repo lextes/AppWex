@@ -20,7 +20,7 @@ class Estudiante: Object {
     dynamic var idEstudiante: String = ""
     dynamic var persona: Persona!
     dynamic var expediente: String!
-    dynamic var unidades: Array<Unit>
+    dynamic var unidades: Array<Unit>!
 
     convenience required init(_ json: JSON) {
         self.init()

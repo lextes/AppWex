@@ -15,7 +15,7 @@ func ==(lhs: Grado, rhs: Grado) -> Bool {
     return lhs.idGrado == rhs.idGrado
 }
 
-class Grado: Object, Equatable {
+class Grado: Object {
     
     dynamic var idGrado: String = ""
     dynamic var nombreGrado: String = ""

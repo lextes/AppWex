@@ -12,10 +12,10 @@ import RealmSwift
 import SwiftyJSON
 
 func ==(lhs: Assesment, rhs: Assesment) -> Bool {
-    return lhs.idAssesmentn == rhs.idAssesment
+    return lhs.idAssesment == rhs.idAssesment
 }
 
-class Assesment: Object, Equatable {
+class Assesment: Object {
     
     dynamic var idAssesment: String = ""
     dynamic var nombreAssesment: String = ""
@@ -28,7 +28,7 @@ class Assesment: Object, Equatable {
         let paginasAssestment = json ["paginas"]
         
         for (_, subJson) : (String, JSON) in paginasAssestment{
-            let currentPagina = Pagina(subJson)
+            let currentPagina = Page(subJson)
             self.paginas.append(currentPagina)
         }
     }

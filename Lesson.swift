@@ -16,7 +16,7 @@ func ==(lhs: Lesson, rhs: Lesson) -> Bool {
     return lhs.idLesson == rhs.idLesson
 }
 
-class Lesson: Object, Equatable {
+class Lesson: Object {
     
     dynamic var idLesson: String = ""
     dynamic var nombreLesson: String = ""
@@ -29,7 +29,7 @@ class Lesson: Object, Equatable {
         let paginasLesson = json ["paginas"]
         
         for (_, subJson) : (String, JSON) in paginasLesson{
-            let currentPagina = Pagina(subJson)
+            let currentPagina = Page(subJson)
             self.paginas.append(currentPagina)
         }
     }
