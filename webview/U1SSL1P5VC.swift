@@ -1,5 +1,5 @@
 //
-//  AppearViewController.swift
+//  U1SSL1P5VC.swift
 //  WebView
 //
 //  Created by Diseño on 16/02/17.
@@ -18,7 +18,7 @@ import UIKit
 import AVFoundation
 
 
-class AppearViewController: UIViewController {
+class U1SSL1P5VC: UIViewController {
     
     
 

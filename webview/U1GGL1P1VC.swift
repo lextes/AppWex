@@ -1,5 +1,5 @@
 //
-//  AppearHouseViewController.swift
+//  U1GGL1P1VC.swift
 //  First Unit
 //
 //  Created by Diseño on 02/03/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppearHouseViewController: UIViewController {
+class U1GGL1P1VC: UIViewController {
 
     
     @IBOutlet weak var kid1: UIImageView!

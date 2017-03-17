@@ -1,5 +1,5 @@
 //
-//  Animated4ButtonViewController.swift
+//  U1HSL2P3VC.swift
 //  First Unit
 //
 //  Created by Diseño on 02/03/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class Animated4ButtonViewController: UIViewController {
+class U1HSL2P3VC: UIViewController {
 
     @IBOutlet weak var popUp: UIImageView!
     

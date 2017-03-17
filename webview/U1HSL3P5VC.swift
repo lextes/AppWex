@@ -1,5 +1,5 @@
 //
-//  VideoBViewController.swift
+//  U1HSL3P5VC.swift
 //  First Unit
 //
 //  Created by Diseño on 21/02/17.
@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class VideoBViewController: UIViewController {
+class U1HSL3P5VC: UIViewController {
     
     var playerController = AVPlayerViewController()
     var player:AVPlayer?

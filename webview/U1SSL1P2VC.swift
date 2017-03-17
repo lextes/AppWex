@@ -1,5 +1,5 @@
 //
-//  MultipleSoundsViewController.swift
+//  U1SSL1P2VC.swift
 //  WebView
 //
 //  Created by Diseño on 15/02/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class MultipleSoundsViewController: UIViewController {
+class U1SSL1P2VC: UIViewController {
 
     var button1 = AVAudioPlayer()
     var button2 = AVAudioPlayer()
