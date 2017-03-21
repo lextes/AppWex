@@ -17,14 +17,14 @@ func ==(lhs: Materia, rhs: Materia) -> Bool {
 
 class Materia: Object {
     
-    dynamic var idMateria: String = ""
+    dynamic var idMateria: Int = 0
     dynamic var nombreMateria: String = ""
-    dynamic var lessons: Array<Lesson>!
+    var lessons: List<Lesson>!
     dynamic var assesment: Assesment!
     
     convenience required init(_ json: JSON) {
         self.init()
-        self.idMateria = json["idMateria"].stringValue
+        self.idMateria = json["idMateria"].intValue
         self.nombreMateria = json["nombreMateria"].stringValue
         let lessonsMateria = json ["lessons"]
         
@@ -33,6 +33,25 @@ class Materia: Object {
             self.lessons.append(currentLesson)
         }
         self.assesment = json ["assesment"] as! Assesment
+    }
+    
+    convenience required init(idMateria: Int, nombreMateria: String, lessons: List<Lesson>?, assesment: Assesment) {
+        self.init()
+        self.idMateria = idMateria
+        self.nombreMateria = nombreMateria
+        
+        for i in 0 ... (lessons?.count)! - 1{
+            self.lessons.append((lessons?[i])!)
+        }
+        self.assesment = Assesment(idAssesment: assesment.idAssesment, nombreAssesment: assesment.nombreAssesment, paginas: assesment.paginas)
+    }
+    
+    convenience required init(_ idMateria: Int) {
+        self.init()
+        self.idMateria = 0
+        self.nombreMateria = ""
+        self.lessons = List<Lesson>()
+        self.assesment = Assesment()
     }
     
 }

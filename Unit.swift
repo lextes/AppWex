@@ -17,15 +17,15 @@ func ==(lhs: Unit, rhs: Unit) -> Bool {
 
 class Unit: Object {
     
-    dynamic var idUnit: String = ""
+    dynamic var idUnit: Int = 0
     dynamic var nombreUnit: String!
     dynamic var periodo: String!
-    dynamic var materias: Array<Materia>!
+    var materias: List<Materia>!
 
     
     convenience required init(_ json: JSON) {
         self.init()
-        self.idUnit = json["idUnit"].stringValue
+        self.idUnit = json["idUnit"].intValue
         self.nombreUnit = json["nombreUnit"].stringValue
         self.periodo = json["periodo"].stringValue
 
@@ -35,6 +35,27 @@ class Unit: Object {
             let currentMateria = Materia(subJson)
             self.materias.append(currentMateria)
         }
+    }
+    
+    convenience required init(idUnit: Int, nombreUnit: String, periodo: String?, materias: List<Materia>? ) {
+        self.init()
+        self.idUnit = idUnit
+        self.nombreUnit = nombreUnit
+        self.periodo = periodo
+
+        
+        for i in 0 ... (materias?.count)! - 1{
+            self.materias.append((materias?[i])!)
+        }
+    }
+    
+    convenience required init(_ idUnit: Int) {
+        self.init()
+        self.idUnit = 0
+        self.nombreUnit = ""
+        self.periodo = ""
+        self.materias = List<Materia>()
+        
     }
     
 }
