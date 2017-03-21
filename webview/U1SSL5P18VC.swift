@@ -17,7 +17,7 @@ class U1SSL5P18VC: UIViewController {
         super.viewDidLoad()
         slideImagnes.isHidden = true
         
-        let recognizerFondo = UITapGestureRecognizer(target: self, action: #selector(SSL5U1ViewController.didTapFondo))
+        let recognizerFondo = UITapGestureRecognizer(target: self, action: #selector(U1SSL5P18VC.didTapFondo))
         imgFondo.addGestureRecognizer(recognizerFondo)
         
         
@@ -46,7 +46,7 @@ class U1SSL5P18VC: UIViewController {
         slideImagnes.isHidden = false
         slideImagnes.setImageInputs(localSource)
         
-        let recognizer = UITapGestureRecognizer(target: self, action: #selector(SSL5U1ViewController.didTap))
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(U1SSL5P18VC.didTap))
         slideImagnes.addGestureRecognizer(recognizer)
         
         
