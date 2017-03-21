@@ -1,5 +1,5 @@
 //
-//  MultipleSoundsBViewController.swift
+//  U1HSL3P6VC.swift
 //  First Unit
 //
 //  Created by Diseño on 21/02/17.
@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class MultipleSoundsBViewController: UIViewController {
+class U1HSL3P6VC: UIViewController {
     
     var but1 = AVAudioPlayer()
     var but2 = AVAudioPlayer()

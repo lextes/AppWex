@@ -1,5 +1,5 @@
 //
-//  Gift2ViewController.swift
+//  U1SSL4P15VC.swift
 //  First Unit
 //
 //  Created by Diseño on 07/03/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Gift2ViewController: UIViewController {
+class U1SSL4P15VC: UIViewController {
     
     @IBOutlet var GifView: UIImageView!
     

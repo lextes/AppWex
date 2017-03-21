@@ -1,5 +1,5 @@
 //
-//  heroesViewController.swift
+//  U1HSL1P1VC.swift
 //  First Unit
 //
 //  Created by Diseño on 28/02/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class heroesViewController: UIViewController {
+class U1HSL1P1VC: UIViewController {
     
     var but1 = AVAudioPlayer()
     var but2 = AVAudioPlayer()

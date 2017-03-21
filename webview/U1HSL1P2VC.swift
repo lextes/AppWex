@@ -1,5 +1,5 @@
 //
-//  heroicViewController.swift
+//  U1HSL1P2VC.swift
 //  First Unit
 //
 //  Created by Diseño on 21/02/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class heroicViewController: UIViewController {
+class U1HSL1P2VC: UIViewController {
     
     var buttonA = AVAudioPlayer()
     var stopPlay = AVAudioPlayer()

@@ -1,5 +1,5 @@
 //
-//  SSL5U1ViewController.swift
+//  U1SSL5P18VC.swift
 //  First Unit
 //
 //  Created by Alexander Rodriguez Torres on 09/03/17.
@@ -8,7 +8,7 @@
 import UIKit
 import ImageSlideshow
 
-class SSL5U1ViewController: UIViewController {
+class U1SSL5P18VC: UIViewController {
     
     @IBOutlet weak var imgFondo: UIImageView!
     @IBOutlet weak var slideImagnes: ImageSlideshow!

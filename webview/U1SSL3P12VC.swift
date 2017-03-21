@@ -1,5 +1,5 @@
 //
-//  Draw2ViewController.swift
+//  U1SSL3P12VC.swift
 //  First Unit
 //
 //  Created by Diseño on 27/02/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Draw2ViewController: UIViewController {
+class U1SSL3P12VC: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var toolIcon: UIButton!

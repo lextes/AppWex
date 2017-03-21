@@ -1,5 +1,5 @@
 //
-//  GiftViewController.swift
+//  U1SCL2P7VC.swift
 //  First Unit
 //
 //  Created by Diseño on 07/03/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GiftViewController: UIViewController {
+class U1SCL2P7VC: UIViewController {
     
     @IBOutlet var GifView: UIImageView!
     @IBOutlet var GifView2: UIImageView!

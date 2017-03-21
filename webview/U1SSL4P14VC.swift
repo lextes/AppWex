@@ -1,5 +1,5 @@
 //
-//  Text3AViewController.swift
+//  U1SSL4P14VC.swift
 //  First Unit
 //
 //  Created by Diseño on 27/02/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Text3AViewController: UIViewController {
+class U1SSL4P14VC: UIViewController {
 
     @IBOutlet weak var Text: UITextView!
     

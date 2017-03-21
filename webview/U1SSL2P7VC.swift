@@ -1,5 +1,5 @@
 //
-//  Animated2ButtonViewController.swift
+//  U1SSL2P7VC.swift
 //  First Unit
 //
 //  Created by Diseño on 23/02/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class Animated2ButtonViewController: UIViewController {
+class U1SSL2P7VC: UIViewController {
 
    
    

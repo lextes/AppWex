@@ -1,5 +1,5 @@
 //
-//  VideoViewController.swift
+//  U1SSL3P10VC.swift
 //  First Unit
 //
 //  Created by Diseño on 21/02/17.
@@ -11,7 +11,7 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class VideoViewController: UIViewController {
+class U1SSL3P10VC: UIViewController {
     
     @IBOutlet weak var viewButtons: UIView!
     var playerController = AVPlayerViewController()
